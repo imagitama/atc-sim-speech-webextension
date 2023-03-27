@@ -1,0 +1,14 @@
+{
+  "name": "atc-sim-speech-webextension",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "Speech for atc-sim",
+  "homepage_url": "https://github.com/imagitama/atc-sim-speech-webextension",
+  "permissions": ["tts"],
+  "content_scripts": [
+    {
+      "matches": ["https://atc-sim.com/*"],
+      "js": ["src/inject.js"]
+    }
+  ]
+}
